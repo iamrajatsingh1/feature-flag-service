@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>serving-web-content</artifactId>
+	<artifactId>feature-flag-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>serving-web-content</name>
-	<description>Demo project for Spring Boot</description>
+	<name>feature-flag-service</name>
+	<description>Spring Boot Application for Feature Flag Management</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,10 +32,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -44,6 +40,11 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
